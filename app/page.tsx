@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import StatsBento from '@/components/StatsBento';
 import ProjectsGrid from '@/components/ProjectsGrid';
+import AchievementsSection from '@/components/AchievementsSection';
 import SkillsSection from '@/components/SkillsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -72,6 +73,7 @@ export default function Home() {
             <Hero />
             <StatsBento />
             <ProjectsGrid />
+            <AchievementsSection />
             <SkillsSection />
             <ContactSection />
           </main>

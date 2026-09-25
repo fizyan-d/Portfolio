@@ -93,7 +93,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 CODE
               </motion.a>
             )}
-            {project.deployed && (
+            {project.deployed ? (
               <motion.a
                 href={project.deployed}
                 target="_blank"
@@ -106,7 +106,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 LIVE
                 <span className="w-1.5 h-1.5 rounded-full bg-neon animate-pulse" />
               </motion.a>
-            )}
+            ) : project.demoNote ? (
+              <span
+                className="text-zinc-500 font-mono text-[9px] tracking-tight min-h-[44px] flex items-center text-right leading-tight max-w-[140px]"
+                title={project.demoNote}
+              >
+                {project.demoNote}
+              </span>
+            ) : null}
           </div>
         </div>
       </div>
@@ -128,7 +135,7 @@ export default function ProjectsGrid() {
           ENGINEERING REGISTRY
         </h2>
         <span className="text-[10px] text-zinc-600 font-mono tracking-wider">
-          SELECT ARCHIVE // 01 — 06
+          SELECT ARCHIVE // 01 — 10
         </span>
       </motion.div>
 

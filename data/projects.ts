@@ -8,6 +8,7 @@ export interface Project {
   deployed?: string;
   status: 'DEPLOYED' | 'EXPO PROTOTYPE' | 'PRODUCTION';
   highlight?: string;
+  demoNote?: string;
 }
 
 export const projectsData: Project[] = [
@@ -72,5 +73,49 @@ export const projectsData: Project[] = [
     deployed: "https://parkishe.lovable.app",
     status: "DEPLOYED",
     highlight: "Smart Parking Infrastructure"
+  },
+  {
+    id: "event-day-tracker",
+    title: "Event Day Tracker",
+    category: "System Automation",
+    description: "A mobile-first web app for managing a live corporate conference across 3 parallel event halls, with a real-time live ticker and expandable session agenda.",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Socket.io", "Vite"],
+    github: "https://github.com/fizyan-d/Event-Traacker-AI",
+    deployed: "https://resplendent-pika-e521c5.netlify.app/",
+    status: "DEPLOYED",
+    highlight: "Real-Time Conference Ops"
+  },
+  {
+    id: "archforge",
+    title: "ArchForge — Architecture Feasibility AI Agent",
+    category: "AI / ML",
+    description: "An AI agent that assesses architectural and design feasibility, built as an agentic AI system. Won 1st Prize in Track 1 (Building AI Agents on AWS) at IdeateBLR '26.",
+    techStack: ["AWS", "Python", "AI Agents", "LLM Pipelines", "FastAPI"],
+    github: "https://github.com/fizyan-d/ArchForge-Architecture-feasibility-AI-agent-",
+    status: "PRODUCTION",
+    highlight: "1st Prize — IdeateBLR '26 (AWS Track)",
+    demoNote: "Private repo — available on request"
+  },
+  {
+    id: "zynq-bingehack",
+    title: "Zynq (BingeHack) — Hackathon Operations Platform",
+    category: "System Automation",
+    description: "A real-time SaaS platform for running hackathons with QR-based check-in, role-based access, live broadcast alerts, venue wayfinding, and an admin console.",
+    techStack: ["Next.js", "MongoDB", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/fizyan-d/BingeHack-Hackathon-Organizing-Platform",
+    status: "PRODUCTION",
+    highlight: "Hackathon Operations SaaS",
+    demoNote: "Private repo — available on request"
+  },
+  {
+    id: "sahayak-ai",
+    title: "Sahayak — AI Voice Agent for Dementia",
+    category: "AI / ML",
+    description: "An AI-based cognitive gaming and memory assistance platform for elderly dementia patients, with a voice AI agent that detects tone and emotion to support caregivers. Built for SIH 2026.",
+    techStack: ["Voice AI", "Python", "Emotion Detection", "NLP", "FastAPI"],
+    github: "https://github.com/fizyan-d/Sahayak-AI-voice-agent-for-Elderly-Pateints-suffering-from-Dementia-",
+    status: "PRODUCTION",
+    highlight: "Smart India Hackathon 2026",
+    demoNote: "Private repo — available on request"
   }
 ];
